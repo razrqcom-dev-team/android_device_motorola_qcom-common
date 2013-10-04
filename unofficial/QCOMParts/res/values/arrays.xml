@@ -38,6 +38,7 @@
     <string-array name="pref_keypad_mplang_entries">
         <item>Automatic</item>
         <item>English (disabled)</item>
+        <item>Croatian</item>
         <item>Czech</item>
         <item>Danish</item>
         <item>German</item>
@@ -61,6 +62,7 @@
     <string-array name="pref_keypad_mplang_values" translatable="false">
         <item>auto</item>
         <item>en</item>
+        <item>hr</item>
         <item>cs</item>
         <item>da</item>
         <item>de</item>
