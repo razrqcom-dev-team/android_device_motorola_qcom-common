@@ -90,6 +90,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     crda \
     linville.key.pub.pem \
+    regdbdump \
     regulatory.bin
 
 # Qcom SoftAP
@@ -149,10 +150,6 @@ PRODUCT_COPY_FILES += \
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-# EGL config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/egl.cfg:system/lib/egl/egl.cfg
-
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
@@ -198,7 +195,6 @@ PRODUCT_PACKAGES += libnetcmdiface
 # Symlinks
 PRODUCT_PACKAGES += \
     libxml2 \
-    libxt_native.so \
     mbhc.bin \
     wcd9310_anc.bin \
     WCNSS_qcom_wlan_nv.bin
@@ -234,8 +230,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     tunnel.audiovideo.decode=true \
     qcom.hw.aac.encoder=true \
     af.resampler.quality=255 \
-    persist.audio.lowlatency.rec=false \
-    ro.opengles.version=131072
+    persist.audio.lowlatency.rec=false
 
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
