@@ -107,10 +107,6 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
-# QCom Parts
-PRODUCT_PACKAGES += \
-    QCOMParts
-
 # Wifi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
