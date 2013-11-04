@@ -130,6 +130,10 @@ PRODUCT_PACKAGES += \
     init.qcom.thermal_conf.sh \
     init.qcom.usb.sh
 
+# Vendor init module
+PRODUCT_PACKAGES += \
+    libinit_msm
+
 # Thermal profiles
 PRODUCT_PACKAGES += \
     thermald-8960.conf \

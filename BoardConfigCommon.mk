@@ -25,6 +25,8 @@ LOCAL_PATH := device/motorola/qcom-common
 
 BOARD_VENDOR := motorola-msm8960
 
+TARGET_INIT_VENDOR_LIB := libinit_msm
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8960
 
