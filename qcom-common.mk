@@ -256,4 +256,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
     ro.modem.no_wdog_chk=1
 
+# World APN list
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/apns-conf.xml:system/etc/apns-conf.xml
+
+# Launcher3
+PRODUCT_PACKAGES += \
+    Launcher3
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
