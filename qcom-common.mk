@@ -201,6 +201,10 @@ PRODUCT_PACKAGES += \
     wcd9310_anc.bin \
     WCNSS_qcom_wlan_nv.bin
 
+# Emoji
+PRODUCT_PACKAGES += \
+    libemoji
+
 # QC Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
