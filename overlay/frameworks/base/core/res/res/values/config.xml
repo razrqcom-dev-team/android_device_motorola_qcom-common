@@ -228,4 +228,7 @@
 
     <!-- We dont have different firmware for wifi modes, prevent reloading it -->
     <bool name="config_wifiApFirmwareReload">false</bool>
+
+    <!-- Disable lockscreen translucent decor by default -->
+    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 </resources>
