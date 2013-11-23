@@ -72,6 +72,8 @@ case $mode in
      *)
         logi "default transport case "
      ;;
+    setprop hw.fm.init 1
+    exit 0
     esac
       /system/bin/fm_qsoc_patches $version 0
      ;;
