@@ -41,7 +41,7 @@ setprop qcom.thermal thermald
 platformid=`cat /sys/devices/system/soc/soc0/id`
 hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
 case "$platformid" in
-    "153") #APQ/MPQ8064ab
+    "153" | "158") #APQ/MPQ8064ab & MSM8226
     setprop qcom.thermal thermal-engine
     ;;
 esac
@@ -56,6 +56,10 @@ if [ ! -h $THERMALD_CONF_SYMLINK ]; then
 
      "153") #APQ/MPQ8064ab
      ln -s /etc/thermald-8064ab.conf $THERMALD_CONF_SYMLINK 2>/dev/null
+     ;;
+
+     "158") #MSM8226
+     ln -s /etc/thermald-8226.conf $THERMALD_CONF_SYMLINK 2>/dev/null
      ;;
 
      "116" | "117" | "118" | "119" | "120" | "121" | "142" | "143" | "144" | "160" | "179" | "180") #MSM8x30&MSM8x27
@@ -99,6 +103,10 @@ if [ ! -h $THERMAL_ENGINE_CONF_SYMLINK ]; then
 
      "153") #APQ/MPQ8064ab
      ln -s /etc/thermal-engine-8064ab.conf $THERMAL_ENGINE_CONF_SYMLINK 2>/dev/null
+     ;;
+
+     "158") #MSM8226
+     ln -s /etc/thermal-engine-8226.conf $THERMAL_ENGINE_CONF_SYMLINK 2>/dev/null
      ;;
 
      "116" | "117" | "118" | "119" | "120" | "121" | "142" | "143" | "144" | "160" | "179" | "180" | "181") #MSM8x30&MSM8x27
