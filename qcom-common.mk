@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
 # Thermal profiles
 PRODUCT_PACKAGES += \
     thermald-8960.conf \
+    thermal-engine-8226.conf
     thermald-ghost.conf
 
 # Scripts
